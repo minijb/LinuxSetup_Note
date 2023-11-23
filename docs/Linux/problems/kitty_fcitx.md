@@ -9,4 +9,3 @@ GLFW_IM_MODULE=ibus kitty
 # ~/.xprofile
 export GLFW_IM_MODULE=ibus kitty
 ```
-

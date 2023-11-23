@@ -33,6 +33,14 @@ if show the following words, it success.
 Hi XXX! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+#### The site of ssh
+
+the site of ssh is a little different from http
+
+```txt
+git@github.com:[YourName]/[repository].git
+```
+
 ## Pull from Github
 
 ### Git fetch
@@ -79,7 +87,6 @@ if we have tracking branch , we don't need add remote
 ## Remote branch
 
 remote branch is used to track the branch from the Github
-
 
 we should use following command to checkout:
 
