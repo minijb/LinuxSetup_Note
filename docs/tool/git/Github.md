@@ -5,6 +5,42 @@ sidebar_class_name: green
 ---
 # Github
 
+## Link to Github
+
+### Use ssh
+
+ssh is the way i mostly use.
+
+#### Step1 : generation ssh
+
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+#### Step2 : add the ssh key to github 
+
+In the setting -> ssh
+
+#### Step3 : test the ssh connection
+
+```sh
+ssh -T git@github.com
+```
+
+if show the following words, it success.
+
+```txt
+Hi XXX! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+#### The site of ssh
+
+the site of ssh is a little different from http
+
+```txt
+git@github.com:[YourName]/[repository].git
+```
+
 ## Pull from Github
 
 ### Git fetch
@@ -51,7 +87,6 @@ if we have tracking branch , we don't need add remote
 ## Remote branch
 
 remote branch is used to track the branch from the Github
-
 
 we should use following command to checkout:
 
