@@ -92,6 +92,12 @@ yay -S fcitx-googlepinyin
 yay -S linuxqq
 ```
 
+## 微信
+
+```shell
+yay -S com.qq.weixin.deepin
+```
+
 ## qq音乐
 
 ```sh
