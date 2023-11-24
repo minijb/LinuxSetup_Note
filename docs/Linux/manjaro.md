@@ -98,6 +98,20 @@ yay -S linuxqq
 yay -S com.qq.weixin.deepin
 ```
 
+### qq和微信的问题
+
+乱码问题
+
+```shell
+yay -S wqy-microhei wqy-zenhei
+```
+
+无法打开问题：使用xsettingsd
+
+```shell
+yay -S xsettingsd
+```
+
 ## qq音乐
 
 ```sh
