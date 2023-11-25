@@ -102,9 +102,7 @@ yay -S com.qq.weixin.deepin
 
 乱码问题
 
-```shell
-yay -S wqy-microhei wqy-zenhei
-```
+[github_is](https://github.com/vufa/deepin-wine-wechat-arch/issues/129)
 
 无法打开问题：使用xsettingsd
 
