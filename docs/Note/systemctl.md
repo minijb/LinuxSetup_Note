@@ -1,6 +1,13 @@
+---
+sidebar_postion: 1
+sidebar_label: systemctl
+sidebar_class_name: green
+---
+
 # Use Systemctl to manage systemd service and units
 
 <!--toc:start-->
+
 - [Use Systemctl to manage systemd service and units](#use-systemctl-to-manage-systemd-service-and-units)
   - [what is systemd](#what-is-systemd)
   - [Service Management](#service-management)
@@ -11,9 +18,8 @@
     - [System State Overview](#system-state-overview)
     - [List Current Units](#list-current-units)
     - [List All Unit Files](#list-all-unit-files)
-  - [Unit Management](#unit-management)
-    - [Display a Unit File](#display-a-unit-file)
-<!--toc:end-->
+  - [Unit Management](#unit-management) - [Display a Unit File](#display-a-unit-file)
+  <!--toc:end-->
 
 [web](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units)
 
@@ -104,7 +110,7 @@ getty@tty1.service                        loaded active running Getty on tty1
 
 `list-units` command display units that `systemd` has attemped to parse and loaded into memory. the following will display that not attempt to load.
 
- ```shell
+```shell
 systemctl list-unit-files
 ```
 
@@ -153,7 +159,7 @@ If you wish to edit the full unit file instead of creating a snippet, you can pa
 sudo systemctl edit --full nginx.service
 ```
 
-if remove addtionas you made 
+if remove addtionas you made
 
 ```shell
 sudo rm -r /etc/systemd/system/nginx.service.d
@@ -164,4 +170,3 @@ remove the full unit file
 ```shell
 sudo rm /etc/systemd/system/nginx.service
 ```
-

@@ -1,3 +1,9 @@
+---
+sidebar_position: 5
+sidebar_label: zsh
+sidebar_class_name: red
+---
+
 # zsh
 
 1. install zsh

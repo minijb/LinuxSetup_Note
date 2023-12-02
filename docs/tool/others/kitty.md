@@ -1,17 +1,32 @@
+---
+sidebar_position: 1
+sidebar_label: Kitty Terminal
+sidebar_class_name: green
+---
+
 # kitty
 
 MY configuration
 
 ```sh
+
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # https://sw.kovidgoyal.net/kitty/conf/
 
 # To get a full list of supported fonts use the `kitty +list-fonts` command.
-font_family     IosevkaTerm Nerd Font
+font_family    Fira Code
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+symbol_map U+4E00-U+9FFF,U+3400-U+4DBF Sarasa Mono SC
+
 #font_family      JetBrainsMono Nerd Font
 font_size 11.0
 
+modify_font cell_height 2px
+modify_font cell_width 105%
 scrollback_lines 8000
 
 paste_actions quote-urls-at-prompt
@@ -275,7 +290,7 @@ map ctrl+a>shift+d     debug_config
 
 
 # BEGIN_KITTY_THEME
-# Dark One Nuanced
+# Ayu Mirage
 include current-theme.conf
 # END_KITTY_THEME
 

@@ -3,7 +3,27 @@ sidebar_position: 1
 sidebar_label: Basic
 sidebar_class_name: green
 ---
+
 # Git
+
+<!--toc:start-->
+
+- [Git](#git)
+  - [Configure git](#configure-git)
+  - [Check the status of current project](#check-the-status-of-current-project)
+  - [Four environment](#four-environment)
+  - [Stage file](#stage-file)
+  - [Commit](#commit)
+    - [Commit without stage](#commit-without-stage)
+  - [Branch](#branch)
+  - [Git branch merge](#git-branch-merge)
+    - [Merge Conflict](#merge-conflict)
+  - [Git stash](#git-stash)
+    - [Pop the stash](#pop-the-stash)
+    - [暂存未跟踪或忽略的文件](#暂存未跟踪或忽略的文件)
+  - [Tag](#tag)
+  - [.gitignore](#gitignore)
+  <!--toc:end-->
 
 ## Configure git
 
@@ -147,25 +167,35 @@ Automatic merge failed; fix conflicts and then commit the result.
 冲突地区下所示
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Hello World!</title>
-<link rel="stylesheet" href="bluestyle.css">
-</head>
-<body>
-
-<h1>Hello world!</h1>
-<div><img src="img_hello_world.jpg" alt="Hello World from Space" style="width:100%;max-width:960px"></div>
-<p>This is the first file in my new Git Repo.</p>
-<<<<<<< HEAD
-<p>This line is here to show how merging works.</p>
-=======
-<p>A new line in our file!</p>
-<div><img src="img_hello_git.jpg" alt="Hello Git" style="width:100%;max-width:640px"></div>
->>>>>>> hello-world-images
-
-</body>
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="bluestyle.css" />
+  </head>
+  <body>
+    <h1>Hello world!</h1>
+    <div>
+      <img
+        src="img_hello_world.jpg"
+        alt="Hello World from Space"
+        style="width:100%;max-width:960px"
+      />
+    </div>
+    <p>This is the first file in my new Git Repo.</p>
+    <<<<<<< HEAD
+    <p>This line is here to show how merging works.</p>
+    =======
+    <p>A new line in our file!</p>
+    <div>
+      <img
+        src="img_hello_git.jpg"
+        alt="Hello Git"
+        style="width:100%;max-width:640px"
+      />
+    </div>
+    >>>>>>> hello-world-images
+  </body>
 </html>
 ```
 
@@ -222,7 +252,7 @@ git stash apply [name] # get work through name like stash@{1}
 # remove the origin stash and use it
 git stash pop
 
-# only remove the orgin 
+# only remove the orgin
 git stash drop [stash@{0}]
 ```
 

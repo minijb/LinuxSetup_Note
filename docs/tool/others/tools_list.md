@@ -1,3 +1,9 @@
+---
+sidebar_position: 2
+sidebar_label: Useful Tool List
+sidebar_class_name: green
+---
+
 # tools list
 
 - cmake
