@@ -25,3 +25,5 @@ sudo pacmsn -S fzf ripgrep zip
 ```
 
 - lazygit
+
+TODO : [web](https://www.poloxue.com/posts/2023-10-28-high-productivity-shell-commands-part1/)
